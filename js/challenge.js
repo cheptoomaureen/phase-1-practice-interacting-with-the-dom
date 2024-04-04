@@ -4,11 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let count = 0;
     let isPaused = false;
     let intervalId;
-  
-    function updateCounter() {
+   function updateCounter() {
       counter.textContent = count;
     }
-  
     function startCounter() {
       intervalId = setInterval(function() {
         if (!isPaused) {
